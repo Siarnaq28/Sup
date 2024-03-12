@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ University - CAPS</title>
+    <link rel="stylesheet" href="style1.css"> 
+</head>
+<body>
+  <header>
+    <div class="logo"> 
+        <a href="index.html">
+        <img src="CAPSlogo.png" alt="Contact Method 2" width = "350" height="80"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Session.html">Sessions</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+  </header>
+    <main>
+    <main>           
+        <div class="container banner">
+            <div class="moving-shapes"></div> 
+           <h1>CAPS Sessions</h1>
+           <p>Explore our wide range of academic and professional support sessions.</p>
+        </div>
+  
+        <div class="container sessions">
+  
+           <div class="section">
+              <h3>Academic Modules</h3> 
+                <div class="session-grid">
+                    <div class="session-item">
+                        <h4>Article Analysis</h4>
+                        <h4>Higher Education Modules</h4> 
+                        <h4>Article Analysis</h4>
+                        <h4>SOP (Statement of Purpose)</h4>
+                        <h4>Delivering formal presentation</h4>
+                        <h4>How to publish</h4>
+                        <h4>APA Basics</h4>
+                        <h4>APA Referencing</h4>
+                        <h4>APA Writing Style</h4>
+                        <h4>Research Proposal</h4>
+                        <h4>Research Skills- Basics</h4>
+                        <h4>Research Skills- Advanced</h4>
+                        <h4>Review of Literature</h4>
+                        <h4>Writing Skills</h4>
+                        <h4>Bluebook</h4> 
+                        <h4>Note taking</h4> 
+                        <h4>Report Writing</h4> 
+                        <h4>IEEE part I and II</h4> 
+                        <h4>Reflective Writing</h4>
+                        <h4>Effective speech writing</h4>
+                        <h4>Academic Report Writing</h4>
+                        <h4>Writing Argumentative Essays</h4>
+                        <h4>Research Manuscript</h4> 
+                    </div>
+                </div>
+            </div>
+
+           <div class="section">
+                <h3>Professional Modules</h3> 
+                <h4>Communication Based Modules</h4>
+                <div class="session-item">
+                        <h4>Personal Branding</h4>
+                        <h4>Power Dressing</h4>
+                        <h4>Professional Communication</h4>
+                        <h4>Email Writing</h4>
+                        <h4>Public Speaking</h4> 
+                    </div>
+
+                <h4>Job Readiness Skills</h4>
+                <div class="session-item">
+                    <h4>Appearing for Job Interview</h4>
+                    <h4>Appearing for Job Interview</h4>
+                    <h4>Cover Letter</h4>                
+                    <h4>Presentation Skills</h4>
+                    <h4>Group Discussion</h4>
+                    <h4>Visual Presentation Skills</h4>
+                </div>    
+            </div>
+
+            <div class="section">
+               <h3>Managerial and Soft Skills</h3>
+               <div class="session-item">
+                    <h4>Creative designing</h4>
+                    <h4>Time management</h4>
+                    <h4>Stress management</h4>
+                    <h4>Business Etiquette</h4>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Value Added Modules</h3>
+                <div class="session-item">
+                    <h4>Blog development</h4> 
+                    <h4>Mind Mapping</h4>
+                    <h4>Culture sensitivity</h4>
+                    <h4>Panel Discussion</h4>
+                    <h4>Resume Writing</h4>
+                    <h4>Professional Code of Conduct</h4>
+                </div>
+             </div>
+
+            <div class="section">
+               <h3>Internship and Fellowship</h3>
+               <div class="session-item">
+                    <h4>Optimising Learning and Harnessing Expertise</h4>
+                </div>
+            </div>
+        </div> 
+
+        <div class = "footer">
+            <div class="contact-info">
+                <a href="https://christuniversity.in/">
+                <img src="ChristLogo.png" alt="Contact Method 1" width = "200" height="75"></a> </div>
+
+            <div class="details">
+                <p>Contact us</p>
+                <p><a href="mailto:caps@christuniversity.in">caps@christuniversity.in</a></p>
+                <p>+91-80 4012 9728</p>
+                <p>CAPS Office, Room 910, Floor 9, Central Block, CHRIST (Deemed<br> to be University), Bangalore Central Campus- 560029</p>
+            </div>
+
+            <div class="contact-info">
+                <a href="index.html">
+                <img src="CAPSlogo.png" alt="Contact Method 2" width = "275" height="70"></a></div>
+        </div>
+    </main>
+<script>
+    const shapesContainer = document.querySelector('.moving-shapes');
+    const numShapes = 10; // Adjust for more or fewer shapes
+
+    for (let i = 0; i < numShapes; i++) {
+    const shape = document.createElement('div');
+    shape.classList.add('shape');
+    shapesContainer.appendChild(shape);
+
+    // Randomize size, position, and animation delay
+    shape.style.width = `${Math.random() * 60 + 20}px`; 
+    shape.style.height = shape.style.width; // Keep them circles
+    shape.style.left = `${Math.random() * 100}%`;
+    shape.style.bottom = `${Math.random() * 100}%`;
+    shape.style.animationDelay = `${Math.random() * 10}s`;
+    }
+</script>
+</body>
+</html>

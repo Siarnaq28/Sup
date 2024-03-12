@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ University - CAPS</title>
+    <link rel="stylesheet" href="style3.css"> 
+</head>
+
+<body>
+    <header>
+        <div class = "logo-container">
+            <div class = "logo-left">
+                <a href="https://christuniversity.in/">
+                    <img src="ChristLogo.png" alt="Contact Method 1" width = "200" height="75">
+                </a>              
+            </div>
+            <div class="logo-right"> 
+                <a href="index.html">
+                <img src="CAPSlogo.png" alt="Contact Method 2" width = "350" height="80"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container banner"> 
+            <div class="moving-shapes"></div> 
+            <h1>SESSION BOOKING</h1>
+        </div>
+
+    <form id="myForm" onsubmit="return validateForm()">
+        <fieldset>
+        <legend>Book Your Session</legend>
+    
+        <div class="form-slide" id="slide-1"> 
+            <label for="session-required">Session Required:</label>
+            <div class="radio-options">
+              <input type="radio" id="opt" name="session-required" value="opt" required>
+              <label for="opt">OPT</label>
+              <input type="radio" id="gpt" name="session-required" value="gpt" required>
+              <label for="gpt">GPT</label>
+            </div>
+          </div>
+          
+    
+        <div class="form-slide" id="slide-2" style="display: none;"> 
+            <label for="discussion-topic">What do you wish to discuss?</label>
+            <select id="discussion-topic" required>
+                <option value="">--Select a topic--</option> 
+                <option value="topic1">Academic Skills</option>
+                <option value="topic2">Professional Skills</option>
+                <option value="topic3">Writing Skills</option>
+                <option value="topic4">Managerial and Soft Skills</option>
+                <option value="topic5">Value Addition Modules</option>
+                <option value="topic6">Internship and Fellowship</option>
+              </select>
+        
+              <div class="form-slide academic-subtopic" id="academic-1" style="display: none;">
+                <label for="academic-subskill">Choose a specific skill</label>
+                <select id="academic-subskill">
+                  <option value="">-- Select a Skill --</option>
+                  <option value="as1">Article Analysis</option>
+                  <option value="as2">Higher Education Modules</option>
+                  <option value="as3">SOP (Statement of Purpose)</option>
+                  <option value="as4">Delivering formal presentation</option>
+                  <option value="as5">How to publish</option>
+                  <option value="as6">APA Basics</option>
+                  <option value="as7">APA Referencing</option>
+                  <option value="as8">APA Writing Style</option>
+                  <option value="as9">Research Proposal</option>
+                  <option value="as10">Research Skills- Basics</option> 
+                  <option value="as11">Research Skills- Advanced</option>
+                  <option value="as12">Review of Literature</option>
+                </select>
+              </div>
+          
+            </div>
+                <div class="form-slide professional-subtopic" id="professional-1" style="display: none;">
+                    <label for="professional-subskill">Choose a specific skill</label>
+                    <select id="professional-subskill">
+                    <option value="">-- Select a Skill --</option>
+                    <option value="ps1">Personal Branding</option>
+                    <option value="ps2">Power Dressing</option>
+                    <option value="ps3">Professional Communication</option>
+                    <option value="ps4">Email Writing</option>
+                    <option value="ps5">Public Speaking</option>
+                    <option value="ps6">Appearing for Job Interview</option>
+                    <option value="ps7">Cover Letter</option>
+                    <option value="ps8">Presentation Skills</option>
+                    <option value="ps9">Group Discussion</option>
+                    <option value="ps10">Visual Presentation Skills</option> 
+                    </select>
+                </div>
+              
+                <div class="form-slide writing-subtopic" id="writing-1" style="display: none;">
+                    <label for="writing-subskill">Choose a specific skill</label>
+                    <select id="writing-subskill">
+                      <option value="">-- Select a Skill --</option>
+                      <option value="ws1">Bluebook</option>
+                      <option value="ws2">Note taking</option>
+                      <option value="ws3">Report Writing</option>
+                      <option value="ws4">IEEE part I and II</option>
+                      <option value="ws5">Reflective Writing</option>
+                      <option value="ws6">Effective speech writing</option>
+                      <option value="ws7">Academic Report Writing</option>
+                      <option value="ws8">Writing Argumentative Essays</option>
+                      <option value="ws9">Research Manuscript</option>
+                    </select>
+                /div>
+                  
+                <div class="form-slide managerial-subtopic" id="managerial-1" style="display: none;">
+                    <label for="managerial-subskill">Choose a specific skill</label>
+                    <select id="managerial-subskill">
+                      <option value="">-- Select a Skill --</option>
+                      <option value="ms1">Creative designing</option>
+                      <option value="ms2">Time management</option>
+                      <option value="ms3">Stress management</option>
+                      <option value="ms4">Business Etiquette</option>
+                    </select>
+                </div>
+                  
+                <div class="form-slide value-add-subtopic" id="value-add-1" style="display: none;">
+                    <label for="value-add-subskill">Choose a specific skill</label>
+                    <select id="value-add-subskill">
+                      <option value="">-- Select a Skill --</option>
+                      <option value="va1">Blog development</option>
+                      <option value="va2">Mind Mapping</option>
+                      <option value="va3">Culture sensitivity</option>
+                      <option value="va4">Panel Discussion</option>
+                      <option value="va5">Resume Writing</option>
+                      <option value="va6">Professional Code of Conduct</option>
+                    </select>
+                </div>
+                  
+              
+                <div class="form-slide internship-subtopic" id="internship-1" style="display: none">
+                        <label for="internship-subskill">Choose a specific skill</label>
+                        <select id="internsip-subskill">
+                        <option value="">-- Select a Skill --</option>
+                        <option value="is1">Optimising Learning and Harnessing Expertise</option>
+                        </select>
+                </div>
+        </div>
+          
+    
+        <div class="form-slide" id="slide-3" style="display: none;"> 
+            <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="date" id="date" required> 
+            </div>
+          
+            <div class="form-group">
+              <label for="time">Time:</label>
+              <input type="time" id="time" required>
+            </div>
+          </div>
+          
+          <div class="form-slide" id="slide-4" style="display: none;"> 
+            <div class="form-group">
+              <label for="department">Department:</label>
+              <input type="text" id="department" required> 
+            </div>
+          
+             <div class="form-group">
+              <label for="class">Class:</label>
+              <input type="text" id="class" required> 
+            </div>
+          </div>
+          
+          <div class="form-slide" id="slide-5" style="display: none;"> 
+            <div class="form-group">
+              <label for="venue">Venue:</label>
+              <input type="text" id="venue" required> 
+            </div>
+          </div>
+          
+          <div class="form-slide" id="slide-6" style="display: none;"> 
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" required>
+            </div>
+          
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+            </div>
+          </div>
+          
+          <div class="form-slide" id="slide-7" style="display: none;"> 
+            <div class="form-group">
+              <label for="requests">Requests:</label>
+              <textarea id="requests" rows="4" required></textarea>
+            </div>
+              <button type="submit" id="submitBtn">Submit</button> 
+          </div>
+          
+    
+        <button type="button" id="prevBtn"  style="display: none;">Previous</button> 
+        <button type="button" id="nextBtn">Next</button> 
+        <button type="submit" id="submitBtn" style="display: none;">Submit</button> 
+        </fieldset>
+    </form>
+  
+    </main>
+
+    <script>
+        const shapesContainer = document.querySelector('.moving-shapes');
+        const numShapes = 10; // Adjust for more or fewer shapes
+    
+        for (let i = 0; i < numShapes; i++) {
+        const shape = document.createElement('div');
+        shape.classList.add('shape');
+        shapesContainer.appendChild(shape);
+    
+        // Randomize size, position, and animation delay
+        shape.style.width = `${Math.random() * 60 + 20}px`; 
+        shape.style.height = shape.style.width; // Keep them circles
+        shape.style.left = `${Math.random() * 100}%`;
+        shape.style.bottom = `${Math.random() * 100}%`;
+        shape.style.animationDelay = `${Math.random() * 10}s`;
+        }
+    </script>
+
+    <script>
+        function validateForm() {
+    // Get form elements
+    const dateInput = document.getElementById("date");
+    const emailInput = document.getElementById("email");
+    const timeInput = document.getElementById("time");
+    // ... other form elements
+
+    // Error message container (optional)
+    const errorMessage = document.getElementById("error-message");
+
+    // Clear any previous errors (optional)
+    errorMessage.innerHTML = ""; // Assuming you have an element with id="error-message"
+
+    // Validation checks and error messages
+    let isValid = true;
+
+    // No past dates
+    if (new Date(dateInput.value).getTime() < new Date().getTime()) {
+        isValid = false;
+        errorMessage.innerHTML += "<p>Error: You cannot select a date in the past.</p>";
+    }
+
+    // Email validation with christuniversity.in
+    const emailRegex = /^.*christuniversity.in$/;
+    if (!emailRegex.test(emailInput.value)) {
+        isValid = false;
+        errorMessage.innerHTML += "<p>Error: Email address must end with @christuniversity.in.</p>";
+    }
+
+    // Time validation - only on the hour, between 8am and 6pm
+    const timeParts = timeInput.value.split(":");
+    const hour = parseInt(timeParts[0]);
+    if (timeParts.length !== 2 || isNaN(hour) || hour < 8 || hour > 18 || timeParts[1] !== "00") {
+        isValid = false;
+        errorMessage.innerHTML += "<p>Error: Time must be on the hour (hh:00) between 8am and 6pm.</p>";
+    }
+
+    // ... Add other validation checks as needed
+
+    // Prevent form submission if there are errors
+    if (!isValid) {
+        return false; // Stops form submission
+    }
+
+    // If all validations pass, submit the form (optional)
+    // You might want to handle form submission through a separate function
+    // document.getElementById("myForm").submit();
+
+    return true;
+}
+
+    </script>
+
+    <script>
+        // ... (your validateForm function remains the same) ...
+
+let currentSlide = 1; 
+showSlide(currentSlide); 
+
+document.getElementById('nextBtn').addEventListener('click', nextSlide);
+document.getElementById('prevBtn').addEventListener('click', prevSlide);
+
+function nextSlide() {
+  showSlide(currentSlide += 1);
+}
+
+function prevSlide() {
+  showSlide(currentSlide -= 1);
+}
+
+function showSlide(slideNumber) {
+  const slides = document.querySelectorAll('.form-slide'); 
+  if (slideNumber > slides.length) { slideNumber = slides.length } 
+  if (slideNumber < 1) { slideNumber = 1 } 
+
+  slides.forEach(slide => slide.style.display = 'none'); 
+  slides[slideNumber - 1].style.display = 'block'; 
+  slides[slideNumber - 1].classList.add('active'); 
+
+  // Button visibility
+  document.getElementById('prevBtn').style.display = (slideNumber === 1) ? 'none' : 'block';
+  document.getElementById('nextBtn').style.display = (slideNumber === slides.length) ? 'none' : 'block';
+  document.getElementById('submitBtn').style.display = (slideNumber === slides.length) ? 'block' : 'none';
+}
+
+
+document.getElementById('discussion-topic').addEventListener('change', showSubtopics);
+
+function showSubtopics(event) {
+   const selectedTopic = event.target.value;
+   hideAllSubtopics(); 
+
+   // Show relevant subtopic slide
+   switch(selectedTopic) {
+      case 'topic1': // Academic Skills
+         document.getElementById('academic-1').style.display = 'block';
+         break;
+      case 'topic2': // Professional Skills
+         document.getElementById('professional-1').style.display = 'block'; 
+         break;
+      case 'topic3': // Writing Skills
+         document.getElementById('writing-1').style.display = 'block';
+         break;
+      case 'topic4': // Managerial and Soft Skills
+         document.getElementById('managerial-1').style.display = 'block';
+         break;
+      case 'topic5': // Value Addition Modules
+         document.getElementById('value-add-1').style.display = 'block';
+         break;
+      case 'topic6': // Internship and Fellowship
+         document.getElementById('internship-1').style.display = 'block';
+         break;
+   }
+}
+
+function hideAllSubtopics() {
+   const subtopicSlides = document.querySelectorAll('.academic-subtopic, .professional-subtopic, ...'); // Add classes for other subtopic slides
+   subtopicSlides.forEach(slide => slide.style.display = 'none');
+}
+
+    </script>
+
+</body>
+</html>

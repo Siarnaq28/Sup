@@ -1,0 +1,148 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    height: 100%; 
+    margin: 0;
+  }
+  
+  header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10; 
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav ul {
+    align-content: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 50px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  main {
+    padding: 20px;
+    margin-top: 70px;
+    flex: 1; /* Allow main to grow to fill available space */
+  }
+  
+  .container {
+    flex: 1;
+  } 
+  
+  .banner {
+    background-color: #e1ad03; /* Example background color */
+    padding: 20px;
+    text-align: center; /* Horizontally center the text  */
+    position: relative; 
+    height: 300px; /* Or your desired height */
+  
+    /* Flexbox for vertical centering */  
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center vertically within the container */
+  }
+  
+  .banner h1, 
+  .banner p {
+    color: white; /* Make the text white */
+  }
+  
+  
+  .moving-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden; /* Hide shapes that extend beyond container */
+  }
+  
+  /* Example shapes - Customize as you like */
+  .moving-shapes .shape {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    opacity: 0; /* Initially hide the shapes */
+    animation: moveShape 10s linear infinite; 
+  }
+  
+  @keyframes moveShape {
+    /* Animation to move shapes across and up */
+    to { 
+      transform: translateX(200%) translateY(-500%);
+      opacity: 1; /* Fade in */
+    }
+  }
+
+  .image-text-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex; /* Enable Flexbox for horizontal arrangement */
+  }
+  
+  .image-section,
+  .text-section {
+    margin-left: 15px;
+    flex: 1; /* Distribute space equally between image and text */
+  }
+  
+  .image-section img {
+    margin-right: 10px;
+    max-width: 90%; /* Make image fit within its container */
+    height: auto;     /* Maintain aspect ratio */
+  }
+  
+  
+  .footer {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid grey;
+  }
+  
+  .contact-info {
+    display: flex;
+    margin-right: 75px;
+    margin-left: 75px;
+  }
+  
+  .contact-info img {
+    margin-right: 10px;
+  }
+  
+  .details {
+    text-align: left;
+  }
+  

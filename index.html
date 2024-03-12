@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ University - CAPS</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <header>
+    <div class="logo"> 
+        <a href="index.html">
+        <img src="CAPSlogo.png" alt="Contact Method 2" width = "350" height="80"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Session.html">Sessions</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+  </header>
+    <main>
+        <div class="container banner"> 
+            <div class="moving-shapes"></div> 
+            <h1>BOOK YOUR SESSION</h1>
+            <p>Get the academic and professional support you want.</p>
+        </div>
+    
+        <div class="container services"> 
+            <div class="services-content"> 
+                <h2>Our Services</h2>
+            </div>
+        
+            <div class="service-item">
+            <a href="otp.html"> <div class = "service-item-image">
+                <img src="oto.jpg" alt="One-to-One Sessions" width = "450" height="400"> 
+                </div> </a>
+            <div class = "service-item-details">
+                One-to-One Sessions
+            </div>
+            </div>
+        
+            <div class="service-item">
+            <a href="gpt.html">  <div class = "service-item-image">
+                <img src="grp.jpg" alt="Group Sessions" width = "450" height="400"> 
+                </div> </a>
+            <div class = "service-item-details">
+                Group Sessions
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    
+        <div class="container about"> <h2>About CAPS</h2>
+          <p>At its core, the Centre for Academic and Professional Support (CAPS) provides assistance in academic and professional spheres to anyone who may need it. The doors of CAPS are open to students, faculty, researchers, and anyone seeking support. At an individual level, CAPS helps one attain greater proficiencies in competencies related to the academic and professional spheres, through a wide array of topics, ranging from research to career readiness.</p>
+        </div>
+
+        <div class = "footer">
+            <div class="contact-info">
+                <a href="https://christuniversity.in/">
+                <img src="ChristLogo.png" alt="Contact Method 1" width = "200" height="75"></a> </div>
+
+            <div class="details">
+                <p>Contact us</p>
+                <p><a href="mailto:caps@christuniversity.in">caps@christuniversity.in</a></p>
+                <p>+91-80 4012 9728</p>
+                <p>CAPS Office, Room 910, Floor 9, Central Block, CHRIST (Deemed<br> to be University), Bangalore Central Campus- 560029</p>
+            </div>
+
+            <div class="contact-info">
+                <a href="index.html">
+                <img src="CAPSlogo.png" alt="Contact Method 2" width = "275" height="70"></a></div>
+        </div>
+    </main>
+
+<script>
+    const shapesContainer = document.querySelector('.moving-shapes');
+    const numShapes = 10; // Adjust for more or fewer shapes
+
+    for (let i = 0; i < numShapes; i++) {
+    const shape = document.createElement('div');
+    shape.classList.add('shape');
+    shapesContainer.appendChild(shape);
+
+    // Randomize size, position, and animation delay
+    shape.style.width = `${Math.random() * 60 + 20}px`; 
+    shape.style.height = shape.style.width; // Keep them circles
+    shape.style.left = `${Math.random() * 100}%`;
+    shape.style.bottom = `${Math.random() * 100}%`;
+    shape.style.animationDelay = `${Math.random() * 10}s`;
+    }
+</script>
+
+
+</body>
+</html>

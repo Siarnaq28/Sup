@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ University - CAPS</title>
+    <link rel="stylesheet" href="style2.css"> 
+</head>
+<body>
+  <header>
+    <div class="logo"> 
+        <a href="index.html">
+        <img src="CAPSlogo.png" alt="Contact Method 2" width = "350" height="80"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="booking.html">Schedule a One on One Peer Training Session</a></li>           
+        </ul>
+    </nav>
+  </header>
+<main>
+    <div class="container banner">
+        <div class="moving-shapes"></div> 
+       <h1>One on One Peer Training</h1>
+    </div>
+    <div class="image-text-container">
+        <div class="image-section">
+          <img src="oto2.jpg" alt="Image Description"> 
+        </div>
+        <div class="text-section">
+          <h2>What we do</h2>
+          <p>The One on One Peer Training wing at CAPS is where individualised learning takes center stage! Unlike monotonous, traditional classrooms, this wing caters to every students diverse learning needs and preferences. Here, education is not a one-size-fits-all approach; rather, it’s a tailored experience designed to match your pace, requirements and style of learning. At OOPT, we focus on forging bonds between trainers and trainees whilst maintaining the utmost professionalism.</p>
+           <p>Here, you’re not just another face in the crowd: you are assigned a dedicated trainer who understands your learning objectives, whether it’s mastering a new language, refining your writing skills, or delving into complex subjects. The wing has been instrumental in enhancing the English language proficiency of many international students and non-native English speakers within the university. </p>
+        </div>
+      </div>
+   <div class = "footer">
+        <div class="contact-info">
+            <a href="https://christuniversity.in/">
+            <img src="ChristLogo.png" alt="Contact Method 1" width = "200" height="75"></a> </div>
+
+        <div class="details">
+            <p>Contact us</p>
+            <p><a href="mailto:caps@christuniversity.in">caps@christuniversity.in</a></p>
+            <p>+91-80 4012 9728</p>
+            <p>CAPS Office, Room 910, Floor 9, Central Block, CHRIST (Deemed<br> to be University), Bangalore Central Campus- 560029</p>
+        </div>
+
+        <div class="contact-info">
+            <a href="index.html">
+            <img src="CAPSlogo.png" alt="Contact Method 2" width = "275" height="70"></a></div>
+    </div>
+</main>
+<script>
+const shapesContainer = document.querySelector('.moving-shapes');
+const numShapes = 10; // Adjust for more or fewer shapes
+
+for (let i = 0; i < numShapes; i++) {
+const shape = document.createElement('div');
+shape.classList.add('shape');
+shapesContainer.appendChild(shape);
+
+// Randomize size, position, and animation delay
+shape.style.width = `${Math.random() * 60 + 20}px`; 
+shape.style.height = shape.style.width; // Keep them circles
+shape.style.left = `${Math.random() * 100}%`;
+shape.style.bottom = `${Math.random() * 100}%`;
+shape.style.animationDelay = `${Math.random() * 10}s`;
+}
+</script>
+</body>
+</html>

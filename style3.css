@@ -1,0 +1,190 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    height: 100%; 
+    margin: 0;
+  }
+  
+  header {
+    display: flex; /* Enable Flexbox for easy positioning */
+    justify-content: space-between; /* Space items to opposite ends */
+    align-items: center; /* Vertically center the logos */
+    padding: 15px 20px; /* Add padding if desired */
+  }
+  
+  .logo-container { 
+    display: flex; /* Allow logos to sit side-by-side */
+    width: 100%;   /* Make the container take full width */
+  }
+  
+  .logo-left {
+    margin-right: auto; /* Push left logo fully to the left */
+    margin-left: 25px;
+    width: 270px;
+    height: 70px;
+}
+  
+  .logo-right {
+    margin-left: auto; /* Push right logo fully to the right */
+    margin-right: 100px;
+    width: 255px; ;
+    height: 60px;
+  }
+
+  main {
+    padding: 20px;
+    margin-top: 70px;
+    flex: 1; /* Allow main to grow to fill available space */
+  }
+ 
+  .banner {
+    background-color: #0d2e02; /* Example background color */
+    padding: 20px;
+    text-align: center; /* Horizontally center the text  */
+    position: relative; 
+    height: 300px; /* Or your desired height */
+  
+    /* Flexbox for vertical centering */  
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center vertically within the container */
+  }
+  
+  .banner h1, 
+  .banner p {
+    color: white; /* Make the text white */
+  }
+  
+  
+  .moving-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden; /* Hide shapes that extend beyond container */
+  }
+  
+  /* Example shapes - Customize as you like */
+  .moving-shapes .shape {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    opacity: 0; /* Initially hide the shapes */
+    animation: moveShape 10s linear infinite; 
+  }
+  
+  @keyframes moveShape {
+    /* Animation to move shapes across and up */
+    to { 
+      transform: translateX(200%) translateY(-500%);
+      opacity: 1; /* Fade in */
+    }
+  }
+
+  /* Body Styles */
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Form Styling */
+  form {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+  }
+  
+  legend {
+    font-size: 1.2em;
+    color: #333; /* Text color for contrast */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: flex; /* Display labels on their own lines */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"],
+  textarea {
+    margin-left: 40px;
+    display: flex;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  textarea {
+    height: 100px; /* Adjust as needed */
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    /* Style radio and checkbox inputs */
+    margin-right: 5px;
+  }
+  .radio-options {
+    display: flex; /* Enable Flexbox */
+    flex-wrap: nowrap;  /* Prevent wrapping to multiple lines */
+  }
+  
+  /* Optional: Spacing between radio buttons */
+  .radio-options input[type="radio"] {
+    margin-right: 10px; 
+  }
+  
+  /* Hover Effects for Inputs, Buttons */
+  input[type="text"]:hover,
+  input[type="email"]:hover,
+  input[type="date"]:hover,
+  input[type="time"]:hover,
+  textarea:hover,
+  button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  button {
+    background-color: #0e334d; /* White background for buttons */
+    color: white; /* Use #e2f1f8 for text color on button */
+    border: 1px solid #e2f1f8; /* Button border with accent color */
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer; /* Indicate clickable button */
+  }
+  
+  button:hover {
+    background-color: #e2f1f8; /* Lighter background on hover */
+    color: #333; /* Text color on hover maintains contrast */
+  }
+  
+/* In your style section or a separate CSS file */
+.form-slide {
+  display: none; 
+}
+
+.form-slide.active { 
+  display: block; 
+}
+
+ 
